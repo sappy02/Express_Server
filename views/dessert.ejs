@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Desserts</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Desserts Data</h1>
+        <table>
+            <tr>
+                <th>Dessert ID</th>
+                <th>Name</th>
+                <th>Color</th>
+                <th>Price</th>
+                <th>Seasonal</th>
+            </tr>
+            {{#each dessertData}}
+            <tr>
+                <td>{{dessert_id}}</td>
+                <td>{{name}}</td>
+                <td>{{color}}</td>
+                <td>{{price}}</td>
+                <td>{{seasonal}}</td>
+            </tr>
+            {{/each}}
+        </table>
+
+
+        <h1><a href="/">Home</a></h1>
+        <h1><a href="/fruits">Fruits</a></h1> 
+        <h1><a href="/veggies">Veggies</a></h1> 
+        <h1><a href="/dessert">Dessert</a></h1>
+        <script src="" async defer></script>
+    </body>
+</html>

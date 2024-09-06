@@ -8,9 +8,14 @@ const dessertData = require('./models/dessert')
 // ----------------------------(7)
 
 const fruitsRouter = require('./routes/fruits')
+const veggiesRouter = require('./routes/veggies')
+const dessertRouter = require('./routes/dessert')
 
+// -----------------------------------(MiddleWare)
+app.use(express.urlencoded({extended:true}))
+app.use(express.json())
 
-
+// -----------------------------------(View Engine)
 app.set('view engine', 'ejs')
 // npm install express ejs --save
 app.use(express.static('public'))
